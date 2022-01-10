@@ -10,8 +10,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" for collapsing code blocks
+" for folding (collapsing) code blocks
 Plugin 'tmhedberg/SimpylFold'
+" for Python auto-indents
+Plugin 'vim-scripts/indentpython.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,4 +36,35 @@ set belloff=all
 
 " Show line numbers
 set number
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
+
+" Configure desired tab behavior, max line width, auto indents, and file format, when editing python files
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=119 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+" Show error when unnecessary newlines are found
+" au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
+
+" Configure the same for frontend files
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=119 |
+    \ set noexpandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
+" Set encoding
+set encoding=utf-8
 
