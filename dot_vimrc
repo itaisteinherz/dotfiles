@@ -58,7 +58,7 @@ au BufNewFile,BufRead *.py
 " au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
 
 " Configure the same for frontend files
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.html,*.css
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
