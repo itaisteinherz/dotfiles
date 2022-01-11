@@ -16,6 +16,10 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 " for autocompletions
 Bundle 'Valloric/YouCompleteMe'
+" for syntax highlighting
+Plugin 'vim-syntastic/syntastic'
+" for PEP8 typechecking
+Plugin 'nvie/vim-flake8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -74,3 +78,7 @@ set encoding=utf-8
 let g:ycm_autoclose_preview_window_after_completion=1
 " Map jump-to-definition to shortcut
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" Enable Python syntax highlighting
+let python_highlight_all=1
+syntax on
