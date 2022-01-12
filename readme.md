@@ -10,3 +10,18 @@ These are mainly related to my (fairly basic) Ubuntu setup, which includes:
 - Vim
 - Python
 
+
+## Getting Started
+
+Run:
+
+```bash
+$ sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply itaisteinherz
+```
+
+To update to the latest dotfiles, run:
+
+```bash
+$ chezmoi update
+```
+
