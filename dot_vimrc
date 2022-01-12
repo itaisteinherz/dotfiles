@@ -20,6 +20,8 @@ Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 " for PEP8 typechecking
 Plugin 'nvie/vim-flake8'
+" color scheme
+Plugin 'connorholyday/vim-snazzy'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,3 +84,8 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Enable Python syntax highlighting
 let python_highlight_all=1
 syntax on
+
+" make color scheme background transparent
+let g:SnazzyTransparent = 1
+" use snazzy color scheme
+colorscheme snazzy
