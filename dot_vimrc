@@ -22,6 +22,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 " color scheme
 Plugin 'connorholyday/vim-snazzy'
+" for file browsing
+Plugin 'scrooloose/nerdtree'
 " for Git integration
 Plugin 'tpope/vim-fugitive'
 
@@ -87,7 +89,13 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
 syntax on
 
-" make color scheme background transparent
+" Make snazzy color scheme background transparent
 let g:SnazzyTransparent = 1
-" use snazzy color scheme
+" Use snazzy color scheme
 colorscheme snazzy
+
+" Start NERDTree when Vim is started without file arguments
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+" Open the existing NERDTree on each new tab
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
