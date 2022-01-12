@@ -22,6 +22,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 " color scheme
 Plugin 'connorholyday/vim-snazzy'
+" for Git integration
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
