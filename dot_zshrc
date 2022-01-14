@@ -50,3 +50,6 @@ export PATH=$HOME/.local/bin:$PATH
 
 # Set Vim to be the default editor
 export EDITOR=/usr/bin/vim
+
+# Set up fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

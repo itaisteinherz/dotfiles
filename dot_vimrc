@@ -26,6 +26,8 @@ Plugin 'connorholyday/vim-snazzy'
 Plugin 'scrooloose/nerdtree'
 " for Git integration
 Plugin 'tpope/vim-fugitive'
+" for fuzzy finding
+Plugin 'junegunn/fzf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
