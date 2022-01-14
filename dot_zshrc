@@ -53,3 +53,6 @@ export EDITOR=/usr/bin/vim
 
 # Set up fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# WSL aliases
+source ~/.wsl.zsh

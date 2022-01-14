@@ -18,8 +18,6 @@ Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
 " for syntax highlighting
 Plugin 'vim-syntastic/syntastic'
-" for PEP8 typechecking
-Plugin 'nvie/vim-flake8'
 " color scheme
 Plugin 'connorholyday/vim-snazzy'
 " for file browsing
