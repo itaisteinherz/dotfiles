@@ -1,1 +1,13 @@
 readme.md
+
+{{ if ne .chezmoi.os "linux" -}}
+.bashrc
+.*.sh
+.*.zsh
+.zshrc
+.zprofile
+.vimrc
+{{ end -}}
+{{ if ne .chezmoi.os "linux" -}}
+_ideavimrc
+{{ end -}}

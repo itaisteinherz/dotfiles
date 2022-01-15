@@ -10,6 +10,9 @@ export PATH=$HOME/.local/bin:$PATH
 # Set Vim to be the default editor
 export EDITOR=/usr/bin/vim
 
+# Set up Linuxbrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # some ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
