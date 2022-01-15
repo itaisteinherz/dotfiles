@@ -5,4 +5,4 @@ source ~/.wsl.sh
 # some ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -alh'
