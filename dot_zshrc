@@ -41,16 +41,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# fnm
-export PATH=$HOME/.fnm:$PATH
-eval "`fnm env`"
-
-# Python (user installation directory)
-export PATH=$HOME/.local/bin:$PATH
-
-# Set Vim to be the default editor
-export EDITOR=/usr/bin/vim
-
 # Set up fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
