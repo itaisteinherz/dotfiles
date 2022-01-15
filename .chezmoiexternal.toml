@@ -1,0 +1,5 @@
+[".zsh/pure"]
+    type = "archive"
+    url = "https://github.com/sindresorhus/pure/archive/main.tar.gz"
+    exact = true
+    stripComponents = 1
