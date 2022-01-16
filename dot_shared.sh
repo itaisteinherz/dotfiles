@@ -1,8 +1,10 @@
 # Common utilities and configurations (shared between zsh and bash)
 
 # fnm
-export PATH=$HOME/.fnm:$PATH
-eval "`fnm env`"
+if [ -x $HOME/.fnm ]; then
+	export PATH=$HOME/.fnm:$PATH
+	eval "`fnm env`"
+fi
 
 # Python (user installation directory)
 export PATH=$HOME/.local/bin:$PATH
@@ -11,7 +13,9 @@ export PATH=$HOME/.local/bin:$PATH
 export EDITOR=vim
 
 # Set up Linuxbrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
 # Some ls aliases
 alias ls='ls --color=tty' # for pretty output
