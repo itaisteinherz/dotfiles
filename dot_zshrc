@@ -1,5 +1,8 @@
-# Set up the prompt
+# Use zsh colors
+autoload colors
+colors
 
+# Set up the prompt
 fpath+=$HOME/.zsh/pure
 
 autoload -U promptinit
