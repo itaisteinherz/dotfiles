@@ -1,3 +1,4 @@
+# vi:ft=zsh
 # Use zsh colors
 autoload colors
 colors

@@ -1,3 +1,4 @@
+" vi:ft=vim
 " Vundle setup
 set nocompatible              " be iMproved, required
 filetype off                  " required
