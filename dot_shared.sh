@@ -17,14 +17,16 @@ if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-# Some ls aliases
-alias ls='ls --color=tty' # for pretty output
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -alh'
+# Enable color support of ls and grep
+if [ -x /usr/bin/dircolors ]; then
+	test -r $HOME/.dircolors && eval "$(dircolors -b $HOME/.dircolors)" || eval "$(dircolors -b)"
+fi
 
-# For pretty grep output
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+# Aliases
+source $HOME/.aliases.sh
+
 # WSL-related utilities
-source ~/.wsl.sh
+source $HOME/.wsl.sh
