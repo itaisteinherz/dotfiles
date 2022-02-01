@@ -2,6 +2,7 @@ readme.md
 
 {{ if ne .chezmoi.os "linux" -}}
 .bashrc
+.gitignore
 .*.sh
 .*.zsh
 .zshrc
