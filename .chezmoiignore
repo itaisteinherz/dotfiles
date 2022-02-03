@@ -6,6 +6,7 @@ readme.md
 .*.zsh
 .zshrc
 .zprofile
+.zsh
 .vimrc
 {{ end -}}
 {{ if ne .chezmoi.os "windows" -}}
