@@ -7,6 +7,7 @@ These are mainly related to my (fairly basic) Windows/Ubuntu (in WSL) setup, whi
 - Homebrew
 - Vim
 - Python
+- Go
 - PyCharm (with IdeaVim)
 
 
