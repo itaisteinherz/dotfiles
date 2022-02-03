@@ -11,6 +11,8 @@
 {{   end -}}
 {{ end -}}
 [core]
-	excludesfile = {{ joinPath .chezmoi.homeDir ".gitignore" }}
+	# Note: `toRawJson` is needed because on Windows, `.chezmoi.homeDir` returns the home path with the backslashes
+	# unescaped
+	excludesfile = {{ joinPath .chezmoi.homeDir ".gitignore" | toRawJson }}
 [init]
 	defaultBranch = main
