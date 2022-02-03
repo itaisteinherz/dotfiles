@@ -9,6 +9,9 @@ fi
 # Python (user installation directory)
 export PATH=$HOME/.local/bin:$PATH
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+
 # Set Vim to be the default editor
 export EDITOR=vim
 
