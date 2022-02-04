@@ -18,8 +18,9 @@ bindkey -e
 # Enable word navigation using ctrl+left/right arrow keys work
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
-# Enable deleting the last word using ctrl+backspace
+# Enable deleting the previous word using ctrl+backspace, and the next word using ctrl+delete
 bindkey "^H" backward-kill-word
+bindkey "5~" kill-word
 
 # Keep 1000 lines of history within the shell and save it to $HOME/.zsh_history:
 HISTSIZE=1000
