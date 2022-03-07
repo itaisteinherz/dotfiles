@@ -91,5 +91,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Set up zoxide
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init bash)"
+
 # Shared configurations
 source $HOME/.shared.sh

@@ -55,5 +55,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Set up fzf
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
+# Set up zoxide
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
+
 # Shared configurations
 source $HOME/.shared.sh
