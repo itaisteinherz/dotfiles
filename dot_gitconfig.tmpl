@@ -1,8 +1,4 @@
 # vi:ft=gitconfig
-# [user]
-# 	email = {{ .email | quote }}
-# 	name = {{ .fullname | quote }}
-
 {{ if (eq .chezmoi.os "linux") -}}
 {{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") -}}
 # Use the Windows Git credential helper when running in WSL
