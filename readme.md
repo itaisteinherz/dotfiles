@@ -13,7 +13,7 @@ These are mainly related to my (fairly basic) Windows/Ubuntu (in WSL) setup, whi
 
 ## Getting Started
 
-[Install `chezmoi`](https://www.chezmoi.io/docs/install/), then run:
+[Install `chezmoi`](https://www.chezmoi.io/install/), then run:
 
 ```bash
 $ chezmoi init --apply itaisteinherz
