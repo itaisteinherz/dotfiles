@@ -91,8 +91,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Setup fzf
+if [[ ! "$PATH" == */home/itai/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/itai/.fzf/bin"
+fi
+
+eval "$(fzf --bash)"
+
 # Set up zoxide
-[ -x "$(command -v zoxide)" ] && eval "$(zoxide init bash)"
+eval "$(zoxide init bash)"
 
 # Shared configurations
 source $HOME/.shared.sh

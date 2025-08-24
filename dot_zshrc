@@ -55,8 +55,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Shared configurations
 source $HOME/.shared.sh
 
-# Set up fzf
-[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+# Setup fzf
+if [[ ! "$PATH" == */home/itai/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/itai/.fzf/bin"
+fi
+
+source <(fzf --zsh)
 
 # Set up zoxide
 eval "$(zoxide init zsh)"
