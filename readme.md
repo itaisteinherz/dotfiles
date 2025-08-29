@@ -3,6 +3,7 @@
 These are mainly related to my (fairly basic) Windows/Ubuntu (in WSL) setup, which includes:
 
 - zsh, with the [pure prompt](https://github.com/sindresorhus/pure)
+- tmux based on [practical tmux](https://mutelight.org/practical-tmux)
 - [fnm](https://github.com/Schniz/fnm) and Node.js
 - Homebrew
 - NeoVim with plugins (based on `vim-plug`)
