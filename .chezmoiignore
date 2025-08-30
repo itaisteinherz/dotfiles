@@ -8,6 +8,8 @@ readme.md
 .zprofile
 .zsh/*
 .vimrc
+.config/nvim/*
+.tmux.conf.local
 {{ end -}}
 {{ if ne .chezmoi.os "windows" -}}
 _ideavimrc
