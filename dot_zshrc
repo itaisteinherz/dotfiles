@@ -60,8 +60,8 @@ zstyle ':completion:*' cache-path ~/.zcompcache
 source $HOME/.shared.sh
 
 # Setup fzf
-if [[ ! "$PATH" == */home/itai/.fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/home/itai/.fzf/bin"
+if [[ ! "$PATH" == *$HOME/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}$HOME/.fzf/bin"
 fi
 
 source <(fzf --zsh)
