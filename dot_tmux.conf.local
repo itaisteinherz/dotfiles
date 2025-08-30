@@ -20,7 +20,7 @@ set -g status-right-length 60
 set -g status-justify left
 
 # Elegant left section
-set -g status-left "#[fg=#808080,bg=black]#(whoami) "
+set -g status-left "  #[fg=#808080,bg=black]#(whoami) "
 
 # Center window list with elegant styling
 set -g window-status-format "#[fg=white]| #[fg=gray,bg=black]#I:#W"
